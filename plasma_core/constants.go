@@ -3,7 +3,12 @@ package plasma_core
 
 const CONTRACT_ADDRESS = "0xA3B2a1804203b75b494028966C0f62e677447A39"
 
-var AUTHORITY = [...]map[string]string{
+var AUTHORITY = map[string]string{
+"address": "0xfd02EcEE62797e75D86BCff1642EB0844afB28c7",
+"key": "3bb369fecdc16b93b99514d8ed9c2e87c5824cf4a6a98d2e8e91b7dd0c063304",
+}
+
+var ACCOUNTS = []map[string]string{
 {
 "address": "0x4B3eC6c9dC67079E82152d6D55d8dd96a8e6AA26",
 "key": "b937b2c6a606edf1a4d671485f0fa61dcc5102e1ebca392f5a8140b23a8ac04f",

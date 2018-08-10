@@ -3,6 +3,8 @@ package utils
 import (
 	"github.com/hot3246624/StarsChain/plasma_core/transaction"
 	"math/big"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/hot3246624/StarsChain/plasma_core"
 )
 
 const BLKNUM_OFFSET  = 1000000000
@@ -19,5 +21,8 @@ func DecodeUTXOID(utxoID int64) (blknum *big.Int, txindex, oindex int64) {
 	return blknum, txindex, oindex
 }
 
+func GetDepositTX(owner common.Address, amount big.Int) *plasma_core.Transaction{
+	return &plasma_core.Transaction{blknum1:0,txindex1:0,oindex1:0,blknum2:0,txindex2:0,oindex2:0,cur12:plasma_core.NULL_ADDRESS,newowner1:owner,amout1:amount,newowner2:plasma_core.NULL_ADDRESS,amount2:0}
+}
 
 

@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f70c41f7-ec28-43d2-b9c2-0033ca804504" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma/root_chain/deployer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/block.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/chain.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/constants.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/exceptions.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/transaction.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/utils/address.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/utils/merkle/exceptain.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/utils/merkle/fixedMerkle.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/utils/merkle/node.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/utils/signautres.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/utils/transactions.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/plasma_core/utils/utils.go" />
-      <change beforePath="$PROJECT_DIR$/plasma/root_chain/contracts/PlasmaRLP.sol" afterPath="$PROJECT_DIR$/plasma/root_chain/contracts/PlasmaRLP.sol" />
-      <change beforePath="$PROJECT_DIR$/plasma/root_chain/contracts/RootChain.sol" afterPath="$PROJECT_DIR$/plasma/root_chain/contracts/RootChain.sol" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plasma/child_chain/childChain.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plasma/child_chain/root_event_listener.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plasma/child_chain/server.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plasma/cli/cli.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plasma/client/child_chain_service.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plasma/client/exceptions.go" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/plasma_core/chain.go" afterPath="$PROJECT_DIR$/plasma_core/chain.go" />
+      <change beforePath="$PROJECT_DIR$/plasma_core/constants.go" afterPath="$PROJECT_DIR$/plasma_core/constants.go" />
+      <change beforePath="$PROJECT_DIR$/plasma_core/utils/transactions.go" afterPath="$PROJECT_DIR$/plasma_core/utils/transactions.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,97 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fixedMerkle.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plasma_core/utils/merkle/fixedMerkle.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="97" column="1" lean-forward="true" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
-              <folding>
-                <element signature="e#16#224#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="transaction.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plasma_core/transaction.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="17">
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plasma_core/constants.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exceptions.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plasma_core/exceptions.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plasma_core/utils/utils.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="124" lean-forward="false" selection-start-line="32" selection-start-column="124" selection-end-line="32" selection-end-column="124" />
-              <folding>
-                <element signature="e#15#257#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signature_cgo.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/crypto/signature_cgo.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="int.go" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/math/big/int.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="block.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plasma_core/block.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="24" />
-              <folding>
-                <element signature="e#21#223#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chain.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plasma_core/chain.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="119" column="72" lean-forward="false" selection-start-line="119" selection-start-column="72" selection-end-line="119" selection-end-column="72" />
+            <state relative-caret-position="187">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -126,11 +45,87 @@
       <file leaf-file-name="signautres.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plasma_core/utils/signautres.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="12" />
+            <state relative-caret-position="227">
+              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transactions.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plasma_core/utils/transactions.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="childChain.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plasma/child_chain/childChain.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
               <folding>
-                <element signature="e#15#241#0" expanded="true" />
+                <element signature="e#21#187#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="root_event_listener.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plasma/child_chain/root_event_listener.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+              <folding>
+                <element signature="e#21#173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plasma/child_chain/server.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding>
+                <element signature="e#21#171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="types.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/common/types.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="138" column="5" lean-forward="false" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deployer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plasma/root_chain/deployer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chain.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plasma_core/chain.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,19 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>torlpitem</find>
-      <find>touint</find>
-      <find>toRlpItem</find>
-      <find>getnextexit</find>
-      <find>addExitToQueue</find>
-      <find>exitsQueues</find>
-      <find>ethereum</find>
-      <find>time</find>
-      <find>Blocks</find>
-      <find>TransactionSet</find>
-      <find>applyBlock</find>
-      <find>validateTransaction</find>
-      <find>Number</find>
       <find>hex</find>
       <find>en</find>
       <find>switch</find>
@@ -174,7 +156,26 @@
       <find>string</find>
       <find>RlpHash</find>
       <find>byte(</find>
+      <find>GetBlock</find>
+      <find>cont</find>
+      <find>broadcast</find>
+      <find>NewContract</find>
+      <find>event</find>
+      <find>Event</find>
+      <find>eventFilter</find>
+      <find>UnlockAccount</find>
+      <find>contract</find>
+      <find>operator</find>
+      <find>New</find>
+      <find>v</find>
+      <find>spent1</find>
+      <find>getblock</find>
+      <find>common.a</find>
+      <find>getDepositTX</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/../../regcostajr</dir>
+    </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -194,7 +195,6 @@
         <option value="$PROJECT_DIR$/plasma/root_chain/contracts/PlasmaRLP.sol" />
         <option value="$PROJECT_DIR$/plasma/root_chain/contracts/RootChain.sol" />
         <option value="$PROJECT_DIR$/plasma/root_chain/contracts/PriorityQueue.sol" />
-        <option value="$PROJECT_DIR$/plasma_core/utils/transactions.go" />
         <option value="$PROJECT_DIR$/plasma_core/utils/address.go" />
         <option value="$PROJECT_DIR$/plasma_core/exceptions.go" />
         <option value="$PROJECT_DIR$/plasma_core/utils/signautres.go" />
@@ -203,11 +203,19 @@
         <option value="$PROJECT_DIR$/plasma_core/utils/merkle/node.go" />
         <option value="$PROJECT_DIR$/plasma_core/transaction.go" />
         <option value="$PROJECT_DIR$/plasma_core/utils/merkle/exceptain.go" />
-        <option value="$PROJECT_DIR$/plasma_core/constants.go" />
         <option value="$PROJECT_DIR$/plasma_core/block.go" />
-        <option value="$PROJECT_DIR$/plasma_core/chain.go" />
         <option value="$PROJECT_DIR$/plasma_core/utils/merkle/fixedMerkle.go" />
         <option value="$PROJECT_DIR$/plasma_core/utils/utils.go" />
+        <option value="$PROJECT_DIR$/plasma/cli/cli.go" />
+        <option value="$PROJECT_DIR$/plasma/client/child_chain_service.go" />
+        <option value="$PROJECT_DIR$/plasma/client/exceptions.go" />
+        <option value="$PROJECT_DIR$/plasma/child_chain/eventHandler.go" />
+        <option value="$PROJECT_DIR$/plasma_core/chain.go" />
+        <option value="$PROJECT_DIR$/plasma_core/utils/transactions.go" />
+        <option value="$PROJECT_DIR$/plasma/child_chain/root_event_listener.go" />
+        <option value="$PROJECT_DIR$/plasma/child_chain/childChain.go" />
+        <option value="$PROJECT_DIR$/plasma_core/constants.go" />
+        <option value="$PROJECT_DIR$/plasma/child_chain/server.go" />
       </list>
     </option>
   </component>
@@ -218,6 +226,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -262,6 +271,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,10 +289,39 @@
               <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
               <item name="StarsChain" type="462c0819:PsiDirectoryNode" />
               <item name="plasma" type="462c0819:PsiDirectoryNode" />
+              <item name="child_chain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StarsChain" type="462c0819:PsiDirectoryNode" />
+              <item name="plasma" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StarsChain" type="462c0819:PsiDirectoryNode" />
+              <item name="plasma" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StarsChain" type="462c0819:PsiDirectoryNode" />
+              <item name="plasma" type="462c0819:PsiDirectoryNode" />
               <item name="root_chain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StarsChain" type="462c0819:PsiDirectoryNode" />
+              <item name="plasma_core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StarsChain" type="462c0819:PsiDirectoryNode" />
+              <item name="plasma_core" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -300,14 +340,24 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Go SDK 1.9.2" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="builtin" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Go SDK 1.9.2" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="errors" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.9.2" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="jsonrpc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
@@ -333,7 +383,7 @@
               <item name="GOPATH &lt;StarsChain&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="ethereum" type="462c0819:PsiDirectoryNode" />
+              <item name="regcostajr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
@@ -341,25 +391,13 @@
               <item name="GOPATH &lt;StarsChain&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="ethereum" type="462c0819:PsiDirectoryNode" />
-              <item name="go-ethereum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StarsChain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;StarsChain&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="ethereum" type="462c0819:PsiDirectoryNode" />
-              <item name="go-ethereum" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
+              <item name="regcostajr" type="462c0819:PsiDirectoryNode" />
+              <item name="go-web3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,7 +410,7 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/huangzhiyong/go/src/github.com/hot3246624/StarsChain/plasma_core/utils/merkle/fixedMerkle.go" />
+    <property name="SearchEverywhereHistoryKey" value="UnlockAccount&#9;null&#9;null&#10;filter&#9;null&#9;null&#10;broadcast&#9;null&#9;null&#10;contract&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -405,26 +443,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="-6" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26752505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -435,201 +473,25 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/plasma/child_chain/root_event_listener.go</url>
+          <line>68</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history>
+      <element expression="NewContract" />
+    </find-history>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/RLPTest.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/deployer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#1#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma_core/constants.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/SafeMath.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/Validate.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/ECRecovery.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/Math.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/Merkle.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/RLP.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/PlasmaRLP.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/RLPTest.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/RootChain.sol" />
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/SafeMath.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/Validate.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/PriorityQueue.sol" />
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/ByteUtils.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/ECRecovery.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/Math.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/Merkle.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/Validate.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/RLPTest.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/RLP.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/SafeMath.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/PlasmaRLP的副本 2.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/PlasmaRLP的副本.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/PlasmaRLP.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plasma/root_chain/contracts/PriorityQueue.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -650,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,21 +523,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plasma/root_chain/deployer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#1#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/crypto/ecdsa/ecdsa.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,27 +538,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plasma_core/utils/transactions.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/common/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/hash/hash.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,22 +583,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plasma_core/utils/signautres.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="e#15#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plasma_core/utils/merkle/fixedMerkle.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="97" column="1" lean-forward="true" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
           <folding>
-            <element signature="e#16#224#0" expanded="true" />
+            <element signature="e#16#224#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -793,50 +614,296 @@
         <state relative-caret-position="480">
           <caret line="32" column="124" lean-forward="false" selection-start-line="32" selection-start-column="124" selection-end-line="32" selection-end-column="124" />
           <folding>
-            <element signature="e#15#257#0" expanded="true" />
+            <element signature="e#15#257#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma_core/exceptions.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma/cli/cli.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma/client/child_chain_service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma/client/exceptions.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/providers/provider-interface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/eth/tracers/tracer_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/vendor/golang.org/x/net/webdav/internal/xml/marshal_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="517" column="64" lean-forward="false" selection-start-line="517" selection-start-column="59" selection-end-line="517" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/event/event.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/web3.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/eth/contract.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/eth/block/default-block-number.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/personal/personal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/test/personal/personal-unlockaccount_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/internal/ethapi/api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="319" column="28" lean-forward="false" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../regcostajr/go-web3/eth/eth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="658" column="0" lean-forward="true" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/eth/filters/api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/accounts/abi/bind/backends/simulated.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="417" column="5" lean-forward="false" selection-start-line="417" selection-start-column="5" selection-end-line="417" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="81" column="5" lean-forward="false" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma/child_chain/eventHandler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plasma_core/block.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="102">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="171" column="5" lean-forward="false" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/jsonrpc/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/jsonrpc/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/jsonrpc/all_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="113" column="24" lean-forward="false" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/pipe.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma_core/utils/signautres.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma_core/utils/transactions.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma/root_chain/deployer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#21#223#0" expanded="true" />
+            <element signature="e#1#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plasma_core/chain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="119" column="72" lean-forward="false" selection-start-line="119" selection-start-column="72" selection-end-line="119" selection-end-column="72" />
+        <state relative-caret-position="265">
+          <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plasma_core/exceptions.go">
+    <entry file="file://$PROJECT_DIR$/plasma/child_chain/root_event_listener.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="443">
+          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding>
+            <element signature="e#21#173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plasma_core/transaction.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="17">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plasma_core/constants.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ethereum/go-ethereum/common/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="138" column="5" lean-forward="false" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma/child_chain/childChain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <element signature="e#21#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plasma/child_chain/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#171#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

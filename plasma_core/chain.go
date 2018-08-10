@@ -78,11 +78,11 @@ func (ch *Chain)applyTransaction(tx Transaction){
 			continue
 		}
 		inputId := utils.EncodeUTXOID(i[0].(*big.Int), i[1].(int64), i[2].(int64))
-		ch.markUXTOSpent(inputId)
+		ch.MarkUXTOSpent(inputId)
 	}
 }
 
-func (ch *Chain)markUXTOSpent(utxoID int64) {
+func (ch *Chain)MarkUXTOSpent(utxoID int64) {
 	_, _, oindex := utils.DecodeUTXOID(utxoID)
 	tx := ch.getTransaction(utxoID)
 	if oindex == 0 {
@@ -92,12 +92,21 @@ func (ch *Chain)markUXTOSpent(utxoID int64) {
 	}
 }
 
-func (ch *Chain)getTransaction(transactionID int64) Transaction{
+func (ch *Chain)GetBlock(blknum big.Int) Block{
+	for i, blk := range ch.Blocks{
+		if blk.Number.Int64() == blknum.Int64(){
+			return ch.Blocks[i]
+		}
+	}
+	return Block{}
+}
+
+func (ch *Chain)GetTransaction(transactionID int64) Transaction{
 	blknum, txindex, _ := utils.DecodeUTXOID(transactionID)
 	return ch.Blocks[blknum.Int64()].TransactionSet[txindex]
 }
 
-func (ch *Chain)validateTransaction(tx Transaction) error{
+func (ch *Chain)ValidateTransaction(tx Transaction) error{
 	inputAmount := int64(0)
 	outputAmount := tx.amount1.Int64() + tx.amount2.Int64()
 	var validSignature  = false
