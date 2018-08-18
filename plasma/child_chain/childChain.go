@@ -25,14 +25,14 @@ func NewCC(operator common.Address, rootChain []byte) *ChildChain{
 	cc.eventLister.on("ExitStarted", cc.applyExit)
 }
 
-func (cc *ChildChain)applyExit(event map[string]map[string]interface{}){
+func (cc *ChildChain)ApplyExit(event map[string]map[string]interface{}){
 	eventArgs := event["arg"]
 	utxoID := eventArgs["utxoPos"]
 	cc.chain.MarkUXTOSpent(utxoID.(int64))
 }
 
 
-func (cc *ChildChain)applyDeposit(event map[string]map[string]interface{}){
+func (cc *ChildChain)ApplyDeposit(event map[string]map[string]interface{}){
 	eventArgs := event["arg"]
 	owner := eventArgs["depositor"]
 	amount := eventArgs["amount"]
@@ -43,7 +43,9 @@ func (cc *ChildChain)applyDeposit(event map[string]map[string]interface{}){
 	cc.chain.AddBlock(depositBlock)
 }
 
-func (cc *ChildChain)applyTransaction(tx plasma_core.Transaction) (int64, error){
+func (cc *ChildChain)ApplyTransaction(tx plasma_core.Transaction) (int64, error){
+
+	//TODO rlp the transaction
 	err := cc.chain.ValidateTransaction(tx)
 	if err != nil {
 		return 0, err
@@ -52,21 +54,21 @@ func (cc *ChildChain)applyTransaction(tx plasma_core.Transaction) (int64, error)
 	return utils.EncodeUTXOID(cc.currentBlock.Number, int64(len(cc.currentBlock.TransactionSet) - 1), 0), nil
 }
 
-func (cc *ChildChain)submitBlock(block plasma_core.Block){
+func (cc *ChildChain)SubmitBlock(block plasma_core.Block){
 	cc.chain.AddBlock(block)
 	//TODO for the different between web3.js with go-web3
 	cc.rootChain.tranact()
 	cc.currentBlock = plasma_core.Block{Number:big.NewInt(cc.chain.NextChildBlock)}
 }
 
-func (cc *ChildChain)getTransaction(txID int64) plasma_core.Transaction{
+func (cc *ChildChain)GetTransaction(txID int64) plasma_core.Transaction{
 	return cc.chain.GetTransaction(txID)
 }
 
-func (cc *ChildChain)getBlock(blknum big.Int) plasma_core.Block{
+func (cc *ChildChain)GetBlock(blknum big.Int) plasma_core.Block{
 	return cc.chain.GetBlock(blknum)
 }
 
-func (cc *ChildChain)getCurrentBlock() plasma_core.Block{
+func (cc *ChildChain)GetCurrentBlock() plasma_core.Block{
 	return cc.currentBlock
 }
